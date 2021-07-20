@@ -19,7 +19,7 @@ public class Treadmill implements Obstacle {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Беговую дорожку длиной " + length + " м";
     }
 }

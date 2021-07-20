@@ -2,7 +2,7 @@ package homeWork1;
 
 public class Main {
     public static void main(String[] args) {
-        Actions [] players = {
+        Actions[] players = {
                 new Cat(5, 2, "Барсик"),
                 new Cat(6, 1, "Мурзик"),
                 new Human(10, 2, "Анна"),
@@ -11,19 +11,19 @@ public class Main {
                 new Robot(15, 5, "T800")
         };
 
-        Obstacle [] obstacles = {
+        Obstacle[] obstacles = {
                 new Treadmill(4),
                 new Wall(1),
                 new Treadmill(10),
                 new Wall(3)
         };
 
-        for (Actions player : players){
+        for (Actions player : players) {
             System.out.println("К прохождению препятствий приступает " + player);
             boolean winner = true;
-            for (Obstacle obstacle: obstacles){
+            for (Obstacle obstacle : obstacles) {
                 System.out.println(player + " пытается преодолеть " + obstacle);
-                if(obstacle.toRun(player.getRun()) || obstacle.toJump(player.getJump())) {
+                if (obstacle.toRun(player.getRun()) || obstacle.toJump(player.getJump())) {
                     System.out.println("И у него получается");
                 } else {
                     winner = false;
@@ -31,7 +31,7 @@ public class Main {
                     break;
                 }
             }
-            if (winner){
+            if (winner) {
                 System.out.println(player + " прошел дистанцию!");
             } else {
                 System.out.println(player + " проиграл!");
