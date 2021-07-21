@@ -18,7 +18,7 @@ public class Wall implements Obstacle {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Стену высотой " + height + " м";
     }
 }

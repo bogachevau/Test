@@ -12,12 +12,12 @@ public class Cat implements Actions {
     }
 
     @Override
-    public void running (){
+    public void running() {
         System.out.println("Я кот, я бегу!");
     }
 
     @Override
-    public void jumping(){
+    public void jumping() {
         System.out.println("Я кот, я прыгаю!");
     }
 
@@ -40,7 +40,7 @@ public class Cat implements Actions {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Кот по кличке " + name;
     }
 }

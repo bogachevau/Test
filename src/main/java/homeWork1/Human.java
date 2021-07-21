@@ -12,12 +12,12 @@ public class Human implements Actions {
     }
 
     @Override
-    public void running (){
+    public void running() {
         System.out.println("Я человек, я бегу!");
     }
 
     @Override
-    public void jumping(){
+    public void jumping() {
         System.out.println("Я человек, я прыгаю!");
     }
 
@@ -40,7 +40,7 @@ public class Human implements Actions {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Человек по имени " + name;
     }
 }
