@@ -18,6 +18,7 @@ public class Main {
         System.out.println(Arrays.toString(appData.getHeader()));
         System.out.println(Arrays.deepToString(appData.getData()));
 
+
         appData.save("src/main/java/homeWork5/data_1.csv");
     }
 }
